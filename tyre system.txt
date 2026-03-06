@@ -1,0 +1,37 @@
+Test Cases for Yokohama Tyres Website
+1. Homepage
+Test Case ID	Test Scenario	Steps	Expected Result
+TC_Home_01	Verify homepage loads successfully	1. Open browser 2. Enter Yokohama website URL	Homepage loads without errors
+TC_Home_02	Verify navigation menu	1. Click each menu item (Products, About, Dealers etc.)	User is redirected to correct page
+TC_Home_03	Verify homepage banners	1. Observe homepage banner carousel	Banners rotate automatically and clickable links work
+TC_Home_04	Verify responsive design	1. Open site on mobile/tablet/desktop	Layout adjusts correctly
+2. Product Listing Page
+Test Case ID	Test Scenario	Steps	Expected Result
+TC_Product_01	View tyre products	1. Click “Products” menu	Product list is displayed
+TC_Product_02	Filter tyres by vehicle type	1. Select category (Car/SUV/Truck)	Only relevant tyres appear
+TC_Product_03	Open product details	1. Click a tyre product	Product details page loads
+TC_Product_04	Verify tyre specifications	1. Scroll to specs section	Specifications displayed correctly
+3. Tyre Finder / Search
+Test Case ID	Test Scenario	Steps	Expected Result
+TC_Search_01	Search tyre by size	1. Enter tyre size 2. Click search	Matching tyres are displayed
+TC_Search_02	Invalid tyre size search	1. Enter invalid tyre size	Error or no-result message displayed
+TC_Search_03	Search by vehicle model	1. Select car brand, model, year	Compatible tyres appear
+4. Dealer Locator
+Test Case ID	Test Scenario	Steps	Expected Result
+TC_Dealer_01	Search dealer by city	1. Enter city name 2. Click search	Nearby dealers are listed
+TC_Dealer_02	Verify map integration	1. Click map view	Dealer locations appear on map
+TC_Dealer_03	Dealer contact info	1. Open dealer details	Address, phone, and working hours visible
+5. Contact / Inquiry Form
+Test Case ID	Test Scenario	Steps	Expected Result
+TC_Contact_01	Submit valid form	1. Enter valid details 2. Submit form	Success message appears
+TC_Contact_02	Mandatory field validation	1. Submit form without required fields	Validation error shown
+TC_Contact_03	Email format validation	1. Enter invalid email	System shows validation message
+6. Performance Test Cases
+Test Case ID	Scenario	Expected Result
+TC_Perf_01	Page load time	Page loads within acceptable time (e.g., <3 sec)
+TC_Perf_02	Multiple users access	Site handles concurrent users without crash
+7. Security Test Cases
+Test Case ID	Scenario	Expected Result
+TC_Sec_01	SQL Injection in form fields	Input sanitized and rejected
+TC_Sec_02	XSS testing	Script tags not executed
+TC_Sec_03	HTTPS verification	Site loads securely with SSL
